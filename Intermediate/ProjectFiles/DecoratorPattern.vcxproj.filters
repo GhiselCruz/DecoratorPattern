@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\DecoratorPattern.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6399E470-4E41-4CB3-A24E-66B7F9B6DCA1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DecoratorPattern.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\DecoratorPatternEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{35A5D1A0-56FA-4305-88EF-DC8EDF234773}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\DecoratorPattern">
+      <UniqueIdentifier>{0F846465-B6BD-498F-A485-5B719DD3CB03}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\DecoratorPattern\DecoradorBase.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\DecoradorBase.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\DecoratorPattern\DecoratorPattern.Build.cs">
+      <Filter>Source\DecoratorPattern</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\DecoratorPattern\DecoratorPattern.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\DecoratorPattern.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\DecoratorPatternCharacter.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\DecoratorPatternCharacter.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\DecoratorPatternGameMode.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\DecoratorPatternGameMode.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\DisparoDecorador.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\DisparoDecorador.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\Escudo.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\Escudo.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\EscudoDecorador.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\EscudoDecorador.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\IDecorador.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\IDecorador.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DecoratorPattern\Proyectil.cpp">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DecoratorPattern\Proyectil.h">
+      <Filter>Source\DecoratorPattern</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

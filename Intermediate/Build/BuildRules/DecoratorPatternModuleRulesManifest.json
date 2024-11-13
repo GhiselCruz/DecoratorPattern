@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\Ghisel Cruz\\Documents\\Unreal Projects\\DecoratorPattern\\Source\\DecoratorPattern\\DecoratorPattern.Build.cs",
+		"C:\\Users\\Ghisel Cruz\\Documents\\Unreal Projects\\DecoratorPattern\\Source\\DecoratorPattern.Target.cs",
+		"C:\\Users\\Ghisel Cruz\\Documents\\Unreal Projects\\DecoratorPattern\\Source\\DecoratorPatternEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

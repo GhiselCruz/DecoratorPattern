@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "DecoratorPattern",
+			"Path": "C:\\Users\\Ghisel Cruz\\Documents\\Unreal Projects\\DecoratorPattern\\Source\\DecoratorPattern.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "DecoratorPatternEditor",
+			"Path": "C:\\Users\\Ghisel Cruz\\Documents\\Unreal Projects\\DecoratorPattern\\Source\\DecoratorPatternEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
