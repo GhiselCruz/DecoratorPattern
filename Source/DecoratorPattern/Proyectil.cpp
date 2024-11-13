@@ -41,5 +41,6 @@ void AProyectil::Mover(float DeltaTime)
 	FVector NewLocation = GetActorLocation() + GetActorForwardVector() * vel * GetWorld()->GetDeltaSeconds();
 	//FVector NewLocation = GetActorLocation() + FVector(0.0f, -vel, 0.0f) * DeltaTime;
 	SetActorLocation(NewLocation);
+
 }
 
