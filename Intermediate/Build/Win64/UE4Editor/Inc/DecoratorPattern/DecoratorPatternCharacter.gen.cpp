@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeDecoratorPatternCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_DecoratorPattern();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	DECORATORPATTERN_API UClass* Z_Construct_UClass_UIDecorador_NoRegister();
 // End Cross Module References
 	void ADecoratorPatternCharacter::StaticRegisterNativesADecoratorPatternCharacter()
 	{
@@ -42,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeDecoratorPatternCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -82,6 +84,9 @@ void EmptyLinkFunctionForGeneratedCodeDecoratorPatternCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecoratorPatternCharacter_Statics::NewProp_SideViewCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADecoratorPatternCharacter_Statics::NewProp_CameraBoom,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ADecoratorPatternCharacter_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UIDecorador_NoRegister, (int32)VTABLE_OFFSET(ADecoratorPatternCharacter, IIDecorador), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADecoratorPatternCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADecoratorPatternCharacter>::IsAbstract,
 	};
@@ -92,11 +97,11 @@ void EmptyLinkFunctionForGeneratedCodeDecoratorPatternCharacter() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_ADecoratorPatternCharacter_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_ADecoratorPatternCharacter_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ADecoratorPatternCharacter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ADecoratorPatternCharacter_Statics::Class_MetaDataParams))
 	};
@@ -109,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeDecoratorPatternCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADecoratorPatternCharacter, 323743554);
+	IMPLEMENT_CLASS(ADecoratorPatternCharacter, 994947248);
 	template<> DECORATORPATTERN_API UClass* StaticClass<ADecoratorPatternCharacter>()
 	{
 		return ADecoratorPatternCharacter::StaticClass();

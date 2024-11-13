@@ -1,0 +1,5 @@
+C:\Users\Ghisel Cruz\Documents\Unreal Projects\DecoratorPattern\Intermediate\Build\Win64\UE4Editor\Development\DecoratorPattern\Definitions.DecoratorPattern.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\Ghisel Cruz\Documents\Unreal Projects\DecoratorPattern\Source\DecoratorPattern/Proyectil.h
+C:\Users\Ghisel Cruz\Documents\Unreal Projects\DecoratorPattern\Intermediate\Build\Win64\UE4Editor\Inc\DecoratorPattern\Proyectil.generated.h

@@ -36,7 +36,7 @@ public: \
 
 #define DecoratorPattern_Source_DecoratorPattern_EscudoDecorador_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AEscudoDecorador(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AEscudoDecorador(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEscudoDecorador) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AEscudoDecorador); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEscudoDecorador); \
@@ -48,8 +48,6 @@ public:
 
 
 #define DecoratorPattern_Source_DecoratorPattern_EscudoDecorador_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AEscudoDecorador() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEscudoDecorador(AEscudoDecorador&&); \

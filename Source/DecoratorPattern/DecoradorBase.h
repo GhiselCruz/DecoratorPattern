@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IDecorador.h"
 #include "GameFramework/Actor.h"
 #include "DecoradorBase.generated.h"
-
 UCLASS()
-class DECORATORPATTERN_API ADecoradorBase : public AActor
+class DECORATORPATTERN_API ADecoradorBase : public AActor, public IIDecorador
 {
 	GENERATED_BODY()
 	
@@ -22,5 +22,12 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+public:
+	IIDecorador* Jugador;
+
+	void SetJugador(AActor* _Jugador);
+	void Empezar() override;
+	float Duracion() override;
 
 };

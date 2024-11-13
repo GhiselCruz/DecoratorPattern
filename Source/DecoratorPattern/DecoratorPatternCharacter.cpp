@@ -6,6 +6,9 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Proyectil.h"
+#include "EscudoDecorador.h"
+#include "DisparoDecorador.h"
 
 ADecoratorPatternCharacter::ADecoratorPatternCharacter()
 {
@@ -43,6 +46,41 @@ ADecoratorPatternCharacter::ADecoratorPatternCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+}
+
+void ADecoratorPatternCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	ACharacter* Mario = Cast<ACharacter>(GetWorld()->GetFirstPlayerController()->GetPawn());
+	if (Mario) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue,
+			FString::Printf(TEXT("Mario encontrado")));
+	}
+
+
+	//Engendramos un decorador para correr en el jugador principal
+	ADisparoDecorador* Disparo = GetWorld()->SpawnActor<ADisparoDecorador>(ADisparoDecorador::StaticClass());
+	Disparo->SetJugador(Mario);
+
+	Jugador = Disparo;
+	Jugador->Empezar();
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Cyan, FString::Printf(TEXT("Su duracion es de %.2f"), Jugador->Duracion()));
+
+
+	//Engendramos un decorador para un escudo en el jugador principal
+	AEscudoDecorador* Escudo = GetWorld()->SpawnActor<AEscudoDecorador>(AEscudoDecorador::StaticClass());
+	Escudo->SetJugador(Disparo);
+
+	Jugador = Escudo;
+	Jugador->Empezar();
+	GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Emerald, FString::Printf(TEXT("Su duracion es de %.2f"), Jugador->Duracion()));
+}
+
+void ADecoratorPatternCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
 }
 
 //////////////////////////////////////////////////////////////////////////

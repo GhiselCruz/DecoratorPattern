@@ -25,3 +25,38 @@ void ADecoradorBase::Tick(float DeltaTime)
 
 }
 
+void ADecoradorBase::SetJugador(AActor* _Jugador)
+{
+	Jugador = Cast<IIDecorador>(_Jugador);
+	if (!Jugador)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Blue, FString::Printf(TEXT("No se realizo la conversion a tipo DecoradorInterface")));
+	}
+}
+
+void ADecoradorBase::Empezar()
+{
+	if (!Jugador)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Red, FString::Printf(TEXT("Estado(): Jugador es null")));
+		return;
+	}
+	else
+	{
+		return Jugador->Empezar();
+	}
+}
+
+float ADecoradorBase::Duracion()
+{
+	if (!Jugador)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Purple, FString::Printf(TEXT("Estado(): Jugador es null")));
+		return 0.f;
+	}
+	else
+	{
+		return Jugador->Duracion();
+	}
+}
+

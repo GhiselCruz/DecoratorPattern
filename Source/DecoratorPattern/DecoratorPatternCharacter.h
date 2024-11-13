@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IDecorador.h"
 #include "GameFramework/Character.h"
 #include "DecoratorPatternCharacter.generated.h"
-
 UCLASS(config=Game)
-class ADecoratorPatternCharacter : public ACharacter
+class ADecoratorPatternCharacter : public ACharacter, public IIDecorador
 {
 	GENERATED_BODY()
 
@@ -42,4 +42,19 @@ public:
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+private:
+	IIDecorador* Jugador;
+
+public:
+	void Empezar() override {};
+	float Duracion() override { return 0.f; };
 };

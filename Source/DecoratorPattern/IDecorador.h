@@ -22,4 +22,7 @@ class DECORATORPATTERN_API IIDecorador
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+
+	virtual void Empezar() = 0;
+	virtual float Duracion() = 0;
 };

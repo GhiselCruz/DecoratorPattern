@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeEscudoDecorador() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEscudoDecorador, 1294991979);
+	IMPLEMENT_CLASS(AEscudoDecorador, 271353701);
 	template<> DECORATORPATTERN_API UClass* StaticClass<AEscudoDecorador>()
 	{
 		return AEscudoDecorador::StaticClass();

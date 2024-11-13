@@ -36,7 +36,7 @@ public: \
 
 #define DecoratorPattern_Source_DecoratorPattern_DisparoDecorador_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ADisparoDecorador(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API ADisparoDecorador(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADisparoDecorador) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ADisparoDecorador); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADisparoDecorador); \
@@ -48,8 +48,6 @@ public:
 
 
 #define DecoratorPattern_Source_DecoratorPattern_DisparoDecorador_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ADisparoDecorador() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADisparoDecorador(ADisparoDecorador&&); \

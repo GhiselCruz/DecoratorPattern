@@ -1,0 +1,2 @@
+C:\Users\Ghisel Cruz\Documents\Unreal Projects\DecoratorPattern\Intermediate\Build\Win64\UE4Editor\Development\DecoratorPattern\Definitions.DecoratorPattern.h
+C:\Users\Ghisel Cruz\Documents\Unreal Projects\DecoratorPattern\Source\DecoratorPattern\DecoratorPattern.h

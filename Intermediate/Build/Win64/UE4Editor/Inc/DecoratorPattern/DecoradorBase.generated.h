@@ -22,7 +22,8 @@ private: \
 	friend struct Z_Construct_UClass_ADecoradorBase_Statics; \
 public: \
 	DECLARE_CLASS(ADecoradorBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/DecoratorPattern"), NO_API) \
-	DECLARE_SERIALIZER(ADecoradorBase)
+	DECLARE_SERIALIZER(ADecoradorBase) \
+	virtual UObject* _getUObject() const override { return const_cast<ADecoradorBase*>(this); }
 
 
 #define DecoratorPattern_Source_DecoratorPattern_DecoradorBase_h_12_INCLASS \
@@ -31,7 +32,8 @@ private: \
 	friend struct Z_Construct_UClass_ADecoradorBase_Statics; \
 public: \
 	DECLARE_CLASS(ADecoradorBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/DecoratorPattern"), NO_API) \
-	DECLARE_SERIALIZER(ADecoradorBase)
+	DECLARE_SERIALIZER(ADecoradorBase) \
+	virtual UObject* _getUObject() const override { return const_cast<ADecoradorBase*>(this); }
 
 
 #define DecoratorPattern_Source_DecoratorPattern_DecoradorBase_h_12_STANDARD_CONSTRUCTORS \

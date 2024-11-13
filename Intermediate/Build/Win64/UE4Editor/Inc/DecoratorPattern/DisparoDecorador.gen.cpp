@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeDisparoDecorador() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADisparoDecorador, 1773304636);
+	IMPLEMENT_CLASS(ADisparoDecorador, 1708878535);
 	template<> DECORATORPATTERN_API UClass* StaticClass<ADisparoDecorador>()
 	{
 		return ADisparoDecorador::StaticClass();
